@@ -150,7 +150,7 @@
             this.Controls.Add(this.txtSubtotal);
             this.Controls.Add(this.label1);
             this.Name = "frmInvoiceTotal";
-            this.Text = "]";
+            this.Text = "lsibinski1b1: Invoice Calculater";
             this.ResumeLayout(false);
             this.PerformLayout();
 
