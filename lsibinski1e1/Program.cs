@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace lsibinski1d1
+namespace lsibinski1e1
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace lsibinski1d1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCurrancyConverter());
+            Application.Run(new frmAverageTestScores());
         }
     }
 }
