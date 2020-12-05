@@ -1,0 +1,67 @@
+﻿<Window x:Class="lsibinski3b1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lsibinski3b1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="322" Margin="65,48,0,0" VerticalAlignment="Top" Width="638">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition MinWidth="1"/>
+                <ColumnDefinition MinWidth="1"/>
+                <ColumnDefinition MinWidth="1"/>
+                <ColumnDefinition MinWidth="2"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Label Content="0) GetDiscount(dec)" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Width="200"/>
+            <TextBox x:Name="inputTextBox0a" Grid.Column="1" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Text="499"/>
+            <TextBox x:Name="resultTextBox0" Grid.Column="4" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="89" Margin="10,5,0,4"/>
+            <Label Content="1)  GetDiscount(dec, out dec)" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Grid.Row="1"/>
+            <TextBox x:Name="inputTextBox1a" Grid.Column="1" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="1" Text="499"/>
+            <TextBox x:Name="resultTextBox1" Grid.Column="4" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="89" Margin="10,4,0,5" Grid.Row="1"/>
+            <Label Content="2) CalcFutureVal(dec)" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Grid.Row="2"/>
+            <TextBox x:Name="inputTextBox2a" Grid.Column="1" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="2" Text="24"/>
+            <TextBox x:Name="inputTextBox2b" Grid.Column="2" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="2" Text="100.00"/>
+            <TextBox x:Name="inputTextBox2c" Grid.Column="3" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="2" Text="0.005"/>
+            <TextBox x:Name="resultTextBox2" Grid.Column="4" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="89" Margin="10,4,0,4" Grid.Row="2"/>
+            <Label Content="3)  CalcFutureVal(dec, out dec)" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Grid.Row="3"/>
+            <TextBox x:Name="inputTextBox3a" Grid.Column="1" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="3" Text="24"/>
+            <TextBox x:Name="inputTextBox3b" Grid.Column="2" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="3" Text="100.00"/>
+            <TextBox x:Name="inputTextBox3c" Grid.Column="3" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="3" Text="0.005"/>
+            <TextBox x:Name="resultTextBox3" Grid.Column="4" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="89" Margin="10,4,0,4" Grid.Row="3"/>
+            <Label Content="4) FahrToCelsius(double)" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Grid.Row="4"/>
+            <TextBox x:Name="inputTextBox4a" Grid.Column="1" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="4" Text="32"/>
+            <TextBox x:Name="resultTextBox4" Grid.Column="4" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="89" Margin="10,4,0,4" Grid.Row="4"/>
+            <Label Content="5) CelsiusToFahr(double, out double)" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Grid.Row="5"/>
+            <TextBox x:Name="inputTextBox5a" Grid.Column="1" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="5" Text="100"/>
+            <TextBox x:Name="resultTextBox5" Grid.Column="4" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="89" Margin="10,4,0,4" Grid.Row="5"/>
+            <Label Content="6) GrossPay(dec, dec)" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Grid.Row="6"/>
+            <TextBox x:Name="inputTextBox6a" Grid.Column="1" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="6" Text="50" Margin="0,4"/>
+            <TextBox x:Name="inputTextBox6b" Grid.Column="3" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="6" Text="10"/>
+            <TextBox x:Name="resultTextBox6" Grid.Column="4" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="89" Margin="10,4,0,4" Grid.Row="6"/>
+            <Label Content="7) TotalHours(string)" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Grid.Row="7"/>
+            <TextBox x:Name="inputTextBox7a" Grid.Column="1" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Grid.Row="7" Text="8 10 11 11 10 " Grid.ColumnSpan="2" Margin="0,4"/>
+            <TextBox x:Name="resultTextBox7" Grid.Column="4" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="89" Margin="10,4,0,4" Grid.Row="7"/>
+            <Label Content="8) GrossPay(string, dec)" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Grid.Row="8"/>
+            <TextBox x:Name="inputTextBox8a" Grid.Column="1" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Grid.Row="8" Text="8 10 11 11 10 " Grid.ColumnSpan="2" Margin="0,4"/>
+            <TextBox x:Name="inputTextBox8b" Grid.Column="3" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="8" Text="10"/>
+            <TextBox x:Name="resultTextBox8" Grid.Column="4" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Center" Width="89" Margin="10,4,0,4" Grid.Row="8"/>
+            <Button x:Name="calcButton" Content="Calculate" Grid.Column="1" HorizontalAlignment="Left" Height="26" Grid.Row="9" VerticalAlignment="Center" Width="61" Click="calcButton_Click" Margin="0,6,0,0"/>
+        </Grid>
+
+    </Grid>
+</Window>
