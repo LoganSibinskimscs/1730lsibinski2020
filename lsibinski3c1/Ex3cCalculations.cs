@@ -30,18 +30,13 @@ namespace lsibinski3c1
             string[] days = { "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY" };
             string[] hours = { "Closed", "10am - 6pm", "10am - 6pm", "10am - 6pm", "10am - 9pm", "10am - 6pm", "8am - 4pm" };
             int index = Array.IndexOf(days, search.ToUpper());
-            string hour = hours[index];
-            for (int i = 0; i < days.Length; i++)
-            {             
-                if (index >= 0 && index <= 7)
+                if (index >= 0 && index <= 6)
                 {
-                    index = index - 1;
-                    search = hour;
-                    break;
+                string hour = hours[index];
+                search = hour;
                 }
                 else
                     return "Invalid input";
-            }
             return search;
         }
 

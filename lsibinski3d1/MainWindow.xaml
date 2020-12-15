@@ -1,0 +1,46 @@
+﻿<Window x:Class="lsibinski3d1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lsibinski3d1"
+        mc:Ignorable="d"
+        Title="1730 ex3d Array Searches" Height="248.333" Width="514.583" Loaded="Window_Loaded">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="189" Margin="21,10,0,0" VerticalAlignment="Top" Width="469">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Values:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="valuesTextBox" Grid.ColumnSpan="3" Grid.Column="1" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" IsReadOnly="True" IsTabStop="False"/>
+            <Label Content="Search for value:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+            <ComboBox x:Name="searchValuesComboBox" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" IsEditable="True" TextBoxBase.TextChanged="searchValuesComboBox_TextChanged" >
+                <ComboBoxItem Content="50" IsSelected="True"/>
+                <ComboBoxItem Content="100"/>
+                <ComboBoxItem Content="300"/>
+                <ComboBoxItem Content="900"/>
+            </ComboBox>
+            <Label Content="Search for range:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="2"/>
+            <Label Content="Count:" Grid.Column="2" HorizontalAlignment="Left" Height="26" Margin="50,10,0,0" Grid.Row="1" VerticalAlignment="Top" />
+            <TextBox x:Name="valueCountTextBox" Grid.Row="1" Grid.Column="3" Margin="10" IsReadOnly="True" IsTabStop="False"
+                     />
+            <Label Content="Count:" Grid.Column="2" HorizontalAlignment="Left" Height="26" Margin="52,10,0,0" Grid.Row="2
+                   " VerticalAlignment="Top" />
+            <ComboBox x:Name="searchRangesComboBox" Grid.Row="2" Grid.Column="1" Margin="10,10,10,10" IsEditable="True" TextBoxBase.TextChanged="searchRangesComboBox_TextChanged" >
+                <ComboBoxItem Content="    0 - 200" IsSelected="True"/>
+                <ComboBoxItem Content="100 - 300"/>
+                <ComboBoxItem Content="700 - 800"/>
+            </ComboBox>
+            <TextBox x:Name="rangeCountTextBox" Grid.Row="2" Grid.Column="3" Margin="10,10,9.571,10" IsReadOnly="True" IsTabStop="False" />
+        </Grid>
+
+    </Grid>
+</Window>
