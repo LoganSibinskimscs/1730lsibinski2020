@@ -38,8 +38,8 @@ namespace lsibinski3d1
             valueCountTextBox.Text = "";
             try
             {
-                this.searchValuesComboBox.Text = Int32.Parse(valueCountTextBox.Text).ToString();
-                this.valueCountTextBox.Text = Ex3dCalculations.ValueCount(values, searchValuesComboBox.Text);
+                int searchValue = Int32.Parse(searchValuesComboBox.Text);
+                this.valueCountTextBox.Text = Ex3dCalculations.ValueCount(values, searchValue).ToString();
             }
             catch { }
         }
@@ -52,6 +52,9 @@ namespace lsibinski3d1
                 string strSearchMin = this.searchRangesComboBox.Text.Substring(0, dashIndex).Trim();
                 string strSearchMax = this.searchRangesComboBox.Text.Substring(dashIndex + 1).Trim();
                 rangeCountTextBox.Text = "";
+                int max = Int32.Parse(strSearchMax);
+                int min = Int32.Parse(strSearchMin);
+                this.rangeCountTextBox.Text = Ex3dCalculations.RangeCount(values, min, max).ToString();
             }
             catch { }
         }

@@ -18,7 +18,9 @@ namespace lsibinski3d1
                 sbResult.Append(", ");
                 result = sbResult.ToString();
             }
-            return result.Remove(83);
+            result = sbResult.ToString();
+            return result.Remove(result.LastIndexOf(", "));
+
         }
 
         public static int ValueCount(int[] values, int searchValue)
@@ -26,20 +28,21 @@ namespace lsibinski3d1
             int count = 0;
             foreach (int value in values)
             {         
-                count =+ searchValue;
+               if (value == searchValue)
+                    count ++;
             }
-            //     increment counter if current value equals searchValue
             return count;
         }
 
         public static int RangeCount(int[] values, int searchMin, int searchMax)
         {
-            // create counter variable
-            // loop
             //     increment counter if current value between min and max (inclusive)
-            // return counter
             int count = 0;
-
+            foreach (int value in values)
+            {
+                if (value <= searchMax || value == searchMin)
+                    count ++;
+            }
             return count;
         }
     }
